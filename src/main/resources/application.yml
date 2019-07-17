@@ -1,0 +1,36 @@
+server:
+  port: 8001
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security?useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  mvc:
+    favicon:
+      enabled: false
+  servlet:
+    multipart:
+      max-file-size: 10MB   #支持的最大文件
+      max-request-size: 10MB   #文件请求最大限制
+
+
+# MyBatis config
+mybatis:
+    type-aliases-package: cn.zx.mapper
+    mapper-locations: classpath:mappers/*Mapper.xml
+
+logging:
+  #日志级别
+  level:
+    #根日志
+    root: warn
+    com.mp.dao: trace
+  #调整日志输出格式
+  pattern:
+    # 控制台输出日志级别：%p,%m日志内容，%n换行
+    console: '%p%m%n'
+
