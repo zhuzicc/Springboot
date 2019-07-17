@@ -9,7 +9,7 @@
     <select id="findByAdminUserId" parameterType="int" resultType="cn.zx.model.Permission">
       select p.*
         from user u
-        LEFT JOIN user_roles ru on u.id=ru.user_id
+        LEFT JOIN role_user ru on u.id=ru.user_id
         LEFT JOIN role r on ru.role_id=r.id
         LEFT JOIN permission_role pr on pr.role_id=r.id
         LEFT JOIN permission p on p.id =pr.permission_id
