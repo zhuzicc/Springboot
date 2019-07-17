@@ -14,9 +14,9 @@
     </resultMap>
 
     <select id="getUserByUsername" parameterType="java.lang.String" resultMap="baseResultMap">
-         SELECT u.*,r.role_name
+         SELECT u.*,r.name
          FROM USER u
-         LEFT JOIN user_roles ru ON u.id= ru.user_id
+         LEFT JOIN role_user ru ON u.id= ru.user_id
          LEFT JOIN role r ON ru.role_id=r.id
          WHERE username = #{username}
     </select>

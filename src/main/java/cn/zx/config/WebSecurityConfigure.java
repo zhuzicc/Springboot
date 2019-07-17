@@ -84,9 +84,14 @@ public class WebSecurityConfigure extends WebSecurityConfigurerAdapter {
     @Bean
     public RememberMeServices MyRememberMeService() {
         JdbcTokenRepositoryImpl rememberMeTokenRepository  = new JdbcTokenRepositoryImpl();
+        // 此处需要设置数据源，否则无法从数据库查询验证信息
         rememberMeTokenRepository.setDataSource(dataSource);
+        // 此处的 key 可以为任意非空值(null 或 "")，单必须和起前面configure
+        // rememberMeServices(RememberMeServices rememberMeServices).key(key)的值相同
         PersistentTokenBasedRememberMeServices rememberMeServices =
                 new PersistentTokenBasedRememberMeServices("INTERNAL_SECRET_KEY", customUserDetailsService, rememberMeTokenRepository);
+
+        // 该参数不是必须的，默认值为 "remember-me", 但如果设置必须和页面复选框的 name 一致
         rememberMeServices.setParameter("remember-me");
         return rememberMeServices;
     }
