@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-09T15:24:12.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="IMONqrL2ENDTtm00m1PJ" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-09T15:50:40.096Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="0nIz9d-CIP2MX5u2KG9P" version="15.9.4" type="github">
   <diagram id="G8VuchcI1mCE1RwJLLVs" name="第 1 页">
     <mxGraphModel dx="2012" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -81,7 +81,7 @@
           <mxGeometry x="125" y="460" width="65" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lmvJmJvYwdmE9mu-P-zr-27" value="查询" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="212.5" y="310" width="65" height="30" as="geometry" />
+          <mxGeometry x="215" y="310" width="65" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lmvJmJvYwdmE9mu-P-zr-28" value="缓行路段" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="215" y="370" width="65" height="30" as="geometry" />
@@ -130,8 +130,8 @@
             <mxPoint x="225" y="209.9999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lmvJmJvYwdmE9mu-P-zr-53" value="二次申诉（是否保留？）" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;fontSize=11;fontStyle=2" vertex="1" parent="1">
-          <mxGeometry x="-110" y="210" width="180" height="25" as="geometry" />
+        <mxCell id="lmvJmJvYwdmE9mu-P-zr-53" value="1.二次申诉（是否保留？）&lt;br&gt;2.是否需要配置系统申诉判断规则？&lt;br&gt;3.申诉/处理/调整三个状态之间的变更关系（什么情况下闭环）。" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;fontSize=11;fontStyle=2;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="190" width="240" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
